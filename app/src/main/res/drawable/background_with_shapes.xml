@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fundo da tela -->
+    <item android:drawable="@android:color/white" />
+
+    <!-- Forma geométrica 2: Retângulo -->
+    <item android:right="0dp" android:left="0dp" android:top="0dp" android:bottom="0dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#FF5722" />
+            <size android:width="100dp" android:height="100dp" />
+        </shape>
+    </item>
+
+    <!-- Forma geométrica 3: Círculo -->
+    <item android:right="0dp" android:left="0dp" android:top="0dp" android:bottom="0dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#03A9F4" />
+            <size android:width="100dp" android:height="100dp" />
+            <corners android:radius="100dp" />
+        </shape>
+    </item>
+</layer-list>

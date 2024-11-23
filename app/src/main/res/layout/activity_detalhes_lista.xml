@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_with_shapes"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/nomeLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Título da Lista"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!-- Container para os itens da lista -->
+        <LinearLayout
+            android:id="@+id/itensListaContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+    <!-- Botões de ações -->
+    <Button
+        android:id="@+id/botao_editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/selector_button"
+        android:text="Editar Lista"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/botao_editar_lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/selector_button"
+        android:text="Salvar Alterações"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <!-- Novo botão para adicionar itens -->
+    <Button
+        android:id="@+id/botao_adicionar_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/selector_button"
+        android:text="Adicionar Item"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/botao_excluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/selector_button"
+        android:text="Excluir Lista"
+        android:textColor="#000000" />
+
+</LinearLayout>

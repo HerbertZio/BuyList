@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estado pressionado (ao clicar) -->
+    <item android:state_pressed="true" android:drawable="@drawable/button_pressed" />
+
+    <!-- Estado de hover (ao passar o mouse sobre o botão) -->
+    <item android:state_hovered="true" android:drawable="@drawable/button_hover" />
+
+    <!-- Estado padrão -->
+    <item android:drawable="@drawable/button_default" />
+
+</selector>

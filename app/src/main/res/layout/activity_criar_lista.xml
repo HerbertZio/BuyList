@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_with_shapes"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para o título da lista -->
+    <EditText
+        android:id="@+id/nomeLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Digite o título da lista"
+        android:inputType="textCapSentences" />
+
+    <!-- ScrollView para as linhas da lista -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/itensListaContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- As linhas serão adicionadas aqui automaticamente -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botão para salvar a lista -->
+    <Button
+        android:id="@+id/botaoSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_button"
+        android:text="Salvar Lista"
+        android:textColor="#000000" />
+</LinearLayout>
